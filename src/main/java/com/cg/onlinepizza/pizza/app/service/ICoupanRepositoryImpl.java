@@ -19,7 +19,7 @@ public class ICoupanRepositoryImpl implements ICoupanRepository{
      ICouponRepositoryDao dao;
 	@Override
 	public Coupan addCoupans(Coupan coupan) {
-		Coupan c = dao.saveAndFlush(coupan);
+		Coupan c = dao.saveAndFlush(coupan);;
 		return c;
 	}
 
@@ -60,3 +60,4 @@ public class ICoupanRepositoryImpl implements ICoupanRepository{
 
 	
 }
+
